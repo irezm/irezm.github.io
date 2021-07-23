@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://irez.cn/2021/07/24/hello-world/</loc>
+    
+    <lastmod>2021-07-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://irez.cn/2020/11/19/nginx%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2021-07-23</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://irez.cn/</loc>
+    <lastmod>2021-07-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+
+  
+</urlset>
