@@ -844,7 +844,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：41字</p>
+      <p>字数：42字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -864,7 +864,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <h3 id="nginx-负载均衡"><a href="#nginx-负载均衡" class="headerlink" title="nginx 负载均衡"></a>nginx 负载均衡</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">upstream nacos &#123;</span><br><span class="line">    server 192.168.8.101:8848;</span><br><span class="line">    server 192.168.8.102:8848;</span><br><span class="line">    server 192.168.8.103:8848;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    listen		80;</span><br><span class="line">    server_name nacos.ljfchtcc.com</span><br><span class="line">    </span><br><span class="line">    locatin / &#123;</span><br><span class="line">        proxy_pass http://</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <h3 id="nginx-负载均衡"><a href="#nginx-负载均衡" class="headerlink" title="nginx 负载均衡"></a>nginx 负载均衡</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">upstream demo_pool &#123;</span><br><span class="line">    server 192.168.8.101:8848;</span><br><span class="line">    server 192.168.8.102:8848;</span><br><span class="line">    server 192.168.8.103:8848;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    listen		80;</span><br><span class="line">    server_name demo.irez.cn</span><br><span class="line">    </span><br><span class="line">    locatin / &#123;</span><br><span class="line">        proxy_pass http://demo_pool</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
   
@@ -900,7 +900,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-07T10:57:50+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-07T14:06:18+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2021年9月7日</p>
