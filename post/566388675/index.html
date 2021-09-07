@@ -5,10 +5,6 @@
   <!-- SEO相关 -->
   
     
-      
-        <meta name="robots" content="index,follow">
-      
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -26,13 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Leon主页</title>
-  
-    <meta name="keywords" content="后端博客,Java,Ubuntu">
+  <title>Java 2年面试题 - Leon主页</title>
   
 
-  
-    <meta name="description" content="贪图省力的船夫，目标永远下游。">
   
 
   <!-- feed -->
@@ -715,7 +707,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://bing.ioliu.cn/v1/rand?w=1920&h=1200"></div>
           
@@ -791,106 +783,234 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/post/566388675/">
-        Java 2年面试题
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java基础部分String，StringBuffer，StringBuilder的区别
 
-String 是字符串常量,修改时重新生成字符串对象引用新的地址
-StringBuffer 在修改是改变对象自身,对于字符串经常改变的情况下使用,主要方法有: 追加,插入,删除,替换等
-String: 对象定义后不可变,线程安全
-StringBuffer 是线程安全的,对调用方法加同步锁.执行效率慢,...
-      
-    
-  </div>
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        Java 2年面试题
+      </h1>
+      <div class='new-meta-box'>
         
-        <time>2021-08-24</time>
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="https://irez.cn" rel="nofollow">
+    <img no-lazy src="">
+    <p>Leon Lan</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年8月24日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="Java 2年面试题" data-path="/post/566388675/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：259字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1分钟</p>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="Java基础部分"><a href="#Java基础部分" class="headerlink" title="Java基础部分"></a>Java基础部分</h2><p>String，StringBuffer，StringBuilder的区别</p>
+<blockquote>
+<p>String 是字符串常量,修改时重新生成字符串对象引用新的地址</p>
+<p>StringBuffer 在修改是改变对象自身,对于字符串经常改变的情况下使用,主要方法有: 追加,插入,删除,替换等</p>
+<p>String: 对象定义后不可变,线程安全</p>
+<p>StringBuffer 是线程安全的,对调用方法加同步锁.执行效率慢,使用多线程操作大量缓存区数据</p>
+<p>StringBuilder 线程不安全,适用于单线程下操作缓存区大量数据\</p>
+<p>StringBuffer与StringBuilder都是同一个抽象父类,只是StringBuilder在方法上嘉</p>
+</blockquote>
+<p>谈一谈你对jvm的理解</p>
+<blockquote>
+<p>JVM是用来运行jdk编译后的class文件,讲class解释为特定平台的机器码执行;</p>
+<p>JVM是Java的核心基础,是Java虚拟机,可以执行Java的字节码程序;</p>
+<p>Java源代码编译成class字节码-&gt;类加载器-&gt;字节码校验-&gt;解释器|jit代码生成器-&gt;硬件运行</p>
+</blockquote>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/post/566388675/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://irez.cn/post/566388675/>https://irez.cn/post/566388675/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-09-07T13:26:13+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年9月7日</p>
+  </a>
 </div>
 
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://irez.cn/post/566388675/&title=Java 2年面试题 - Leon主页&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://irez.cn/post/566388675/&title=Java 2年面试题 - Leon主页&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://irez.cn/post/566388675/&title=Java 2年面试题 - Leon主页&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAAD4CAAAAADkunTXAAACQUlEQVR42u3bQXICMQwEQP7/6eSeFIVH8gIrt29AWNQ+qUbK4+fQ8wAHBwcHBx8EfxTPvwf+eX/1e08LfPE71XrBwcHBwcEnwj9eUHih1XrBwcHBwcEnw9MCVwtOLzB9vVwvODg4ODg4ePkirvo9cHBwcHBw8HohuxudXYMLcHBwcHDwk+BxQN8MHKoLBx+fpICDg4ODg38RfNdA/12vty34gYODg4OD3xjePe8eMLTrBQcHBwcHHwSvNghpsND9vFsfODg4ODj4RPiuQUF1IFBdACjXCQ4ODg4OPhCeDvTT76UBRPX57QQGHBwcHBz8RvA0INgV/KfQXYuA4ODg4ODgk+BXBQSrA4Bq0FBugMDBwcHBwQ+A73o/vZjVC6sGF+Dg4ODg4JPg1ULTxmH38y/fbAQHBwcHB78RvLtAVw0WdgUbyw0WODg4ODj4IPhqw9GFdgOJbYsG4ODg4ODgg+DVhqIaQFw9UHj5GhwcHBwc/CD4VQFBN6hILxgcHBwcHPwEeLXxuKqhqQ48licp4ODg4ODgB8GriwLpQKAbRDz9HBwcHBwcfBC8e6oD/23BQnox4ODg4ODgg+DdhmFXsJAuJKSDDHBwcHBw8MnwtGGpgleftwxJ6wcHBwcHBx8MTwfx1b9fDSzeNkkBBwcHBwc/GJ4GCNXBRVo3ODg4ODg4eP8f63cFDu3BBzg4ODg4+GB42kikBXYXA9Png4ODg4ODnwCvNgbp4L7dgDQXBcDBwcHBwSfBTzvg4ODg4OADzi/CLAUfMksBvAAAAABJRU5ErkJggg==">
           </div>
-        
+        </div>
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/post/3636087120/">
-        mysql 创建数据库、创建用户、修改用户密码、用户权限、撤销授权、删除用户
-      </a>
-    </h2>
-  
-  <div class='md'>
     
       
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://irez.cn/post/566388675/&text=Java 2年面试题 - Leon主页"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
         
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/post/3636087120/'>
+          <p class='title'>mysql 创建数据库、创建用户、修改用户密码、用户权限、撤销授权、删除用户<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
 以下操作基于Mysql 8.0+
 
 创建数据库普通用法：
@@ -899,178 +1019,28 @@ StringBuffer 是线程安全的,对调用方法加同步锁.执行效率慢,...
 字符集编码：utf8mb4
 校对编码：utf8mb4_0900_ai_ci
 
-1create database `db_name` character set utf8mb4 collate utf8mb4_0900_ai_ci;
-
-推荐用法:
-
-如果存在则不创建，不存在则创建
-
-1create dat...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/post/3636087120/'>
-            阅读全文
-          </a>
-        </div>
+1create datab...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/post/1243066710/">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-07-26</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/post/1243066710/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+  </article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/post/657465472/">
-        crontab 简单使用教程
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        cron 语法
-1cron表达式 需要执行的命令或程序
 
-注意： Linux cron最小调度时间为1分钟
-cron定义说明: 
-12345678*    *    *    *    *-    -    -    -    -|    |    |    |    ||    |    |    |    +----- 星期中星期几 (0 - 6) (星期天 为0)|    |    |...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-11-19</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/post/657465472/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/post/1508208186/">
-        nginx 常用配置
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        nginx 负载均衡1234567891011121314upstream nacos &#123;    server 192.168.8.101:8848;    server 192.168.8.102:8848;    server 192.168.8.103:8848;&#125;server &#123;    listen		80;    server_name nacos.l...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-11-19</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/post/1508208186/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
 
 
 </div>
@@ -1080,201 +1050,22 @@ cron定义说明:
     
     
 
-<section class="widget blogger shadow desktop">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/irezm/source@latest/picgo-file/20210725213643.png'/>
-        </a>
-      
-    
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:irez@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/irezm"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://music.163.com/#/user/home?id=417388806"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
-    
-
-  
-
-  
-    
-    
-
-  
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop">
-  
   <header>
     
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>5 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2019-03-19'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>1.3k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Tue Sep 07 2021 13:26:23 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-09-07 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-09-07 日';
-          }
-        </script>
-        
-      
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86"><span class="toc-text">Java基础部分</span></a></li></ol>
     </div>
-  </div>
-</section>
+  </section>
+
 
   
 
@@ -1289,8 +1080,8 @@ cron定义说明:
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Java 2年面试题";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

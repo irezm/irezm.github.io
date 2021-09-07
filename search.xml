@@ -5,8 +5,8 @@
     
     <entry>
       <title>Java 2年面试题</title>
-      <link href="/post/1508208186/"/>
-      <url>/post/1508208186/</url>
+      <link href="/post/566388675/"/>
+      <url>/post/566388675/</url>
       
         <content type="html"><![CDATA[<h2 id="Java基础部分"><a href="#Java基础部分" class="headerlink" title="Java基础部分"></a>Java基础部分</h2><p>String，StringBuffer，StringBuilder的区别</p><blockquote><p>String 是字符串常量,修改时重新生成字符串对象引用新的地址</p><p>StringBuffer 在修改是改变对象自身,对于字符串经常改变的情况下使用,主要方法有: 追加,插入,删除,替换等</p><p>String: 对象定义后不可变,线程安全</p><p>StringBuffer 是线程安全的,对调用方法加同步锁.执行效率慢,使用多线程操作大量缓存区数据</p><p>StringBuilder 线程不安全,适用于单线程下操作缓存区大量数据\</p><p>StringBuffer与StringBuilder都是同一个抽象父类,只是StringBuilder在方法上嘉</p></blockquote><p>谈一谈你对jvm的理解</p><blockquote><p>JVM是用来运行jdk编译后的class文件,讲class解释为特定平台的机器码执行;</p><p>JVM是Java的核心基础,是Java虚拟机,可以执行Java的字节码程序;</p><p>Java源代码编译成class字节码-&gt;类加载器-&gt;字节码校验-&gt;解释器|jit代码生成器-&gt;硬件运行</p></blockquote>]]></content>
       
